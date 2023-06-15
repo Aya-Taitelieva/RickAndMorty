@@ -1,0 +1,68 @@
+body {
+  background-image: url(https://foni.club/uploads/posts/2023-02/1675616323_foni-club-p-fon-rik-i-morti-i-kosmos-4.jpg);
+  font-family: play;
+}
+
+h1 img {
+  width: 80%;
+  margin: 0 10%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 15%;
+  gap: 20px;
+}
+.card {
+  height: 284px;
+  width: 293px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  box-shadow: 0 0 3px 3px #bfde42;
+  overflow: hidden;
+}
+
+/*Image*/
+.card-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card-imagine img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/*Description */
+.card-description {
+  display: flex;
+  position: absolute;
+  gap: 0.5em;
+  flex-direction: column;
+  background-color: #bfde42;
+  color: #399aad;
+  height: 20%;
+  bottom: 0;
+  border-radius: 16px;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+/* Hover states */
+.card:hover .card-description {
+  transform: translateY(100%);
+}
